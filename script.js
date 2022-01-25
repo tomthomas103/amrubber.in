@@ -53,12 +53,12 @@ $('#productDiv').html(divContent);
 
 
 function createAboutDiv(content){
-  var divContent="";
+  var divContent='';
   $('#aboutDiv').html('<p>'+content.des+'</p>');
-  for (i=0;i<content.length;i++){
+  for (i=0;i<content.images.length;i++){
     divContent=divContent+
-    '<div class="carousel-item carousel-item2 '+content[i].type+'">'+
-      '<img class="d-block w-100" src="'+content[i].path+'" alt="First slide">'+
+    '<div class="carousel-item carousel-item2 '+content.images[i].type+'">'+
+      '<img class="d-block w-100" src="'+content.images[i].path+'" alt="First slide">'+
     '</div>';
   }  
   $('#aboutImages').html(divContent);
@@ -68,7 +68,6 @@ function createAboutDiv(content){
 
 function scrollFunction() {
   if(loadScrollfn){
-    console.log("RUNNNNNNNN");
     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
       document.getElementById("nave1").style.background = "white";
       document.getElementById("nave1").style.color = "black";
