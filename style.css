@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;500&display=swap');
+
+
+
+.name{
+    font-family: 'Kanit', sans-serif;  
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 9px;
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+}
+
+.container-fluid {
+    max-width:1400px;
+    
+}
+#top{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    z-index: 997;
+    
+}
+
+.nav-link{
+    font-family: 'Kanit', sans-serif; 
+    font-weight: 380;
+    font-size: 18px;
+    color: grey;
+}
+
+
+nav .navbar-nav li a:hover{
+    color: white !important;
+    background-color: brown !important;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+
+
+nav .navbar-nav li a{
+    color: black !important;
+}
+
+
+#pto{
+    height: 45em;
+    margin-bottom: 4em;
+}
+
+@media (min-width: 200px) {
+    .carousel-item1 img {
+        width: 100% !important;
+        height: 650px;
+        max-height: 650px;
+    }
+}
+
+@media (min-width: 200px) {
+    .carousel-item2 img {
+        width: auto !important;
+        height: 400px;
+        max-height: 400px;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInLeft1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top: 50%;
+}
+
+.carousel-item::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#carouselExampleSlidesOnly > div > div:nth-child(n) > div > h5{
+    font-family: 'Kanit', sans-serif; 
+    color: white !important;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#carouselExampleSlidesOnly > div > div:nth-child(n) > div > p{
+    font-family: 'Kanit', sans-serif; 
+    color: white !important;
+    font-size: 20px;
+    
+    font-weight: 550;
+}
+
+.side{
+    background-color: brown;
+    
+    height: 7px;
+}
+
+.nm_pr{
+    font-family: 'Kanit', sans-serif; 
+    font-weight: 600;  
+    font-size: 33px;
+    margin-top: -3px;
+}
+
+.pr_div{
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s;
+}
+
+.card-img-top{
+    width: 253px;
+    height: 364px;
+
+}
+
+.card1{
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+.card2{
+    animation: 1s ease-out 0s 1 slideInLeft1;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+body > section:nth-child(n) > div > div > div:nth-child(n) > div > div > h5,p{
+    font-family: 'Kanit', sans-serif;
+}
+
+body > section:nth-child(n) > div > div > div:nth-child(n) > div > div > h5{
+
+    font-size: 28px;
+}
+
+body > section:nth-child(n) > div > div > div:nth-child(n) > div > div > a{
+    margin-left: 45px;
+    background-color: brown;
+    color: white;
+}
+
+body > section:nth-child(n) > div > div > div:nth-child(n) > div > div > a:hover {
+    background-color: black;
+    transition: all .4s ease-in-out;
+}
+
+.about_div{
+    padding: 2em 0 0 0;
+    text-align: justify;
+}
+
+.about_div_right{
+    padding: 1em 0 0 0;
+   
+}
+
+#about{
+    padding-bottom: 2.8em;
+}
+
+
+
+#contact > div > div > div.contact_main.col-md-6 > div:nth-child(n) > div > i{
+    color: brown;
+    font-size: 31px;
+    margin-right: 9px;
+}
+
+#contact > div > div > div.contact_main.col-md-6 > div:nth-child(n) > div > label{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: .1rem;
+}
+
+@media (max-width:500px) {
+    .contact label{
+        font-size: 16px !important;
+    }
+}
+
+
+
+
+
+
+.contact_main {
+    padding-top: 3em;
+}
+
+.contact_right{
+    padding-top: 2em;
+}
+
+.contact{
+    margin-bottom: 64px;
+}
+
+#contact > div > div > div.col-md-6.contact_right > form > div.form-row > div:nth-child(n) > label{
+    font-family: 'Kanit', sans-serif;
+   
+}
+
+#contact > div > div > div.col-md-6.contact_right > form > div:nth-child(n) > label{
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+::placeholder{
+    font-family: 'Kanit', sans-serif;
+}
+
+#inputEmail4, #inputAddress2, #inputAddress, #inputPassword4{
+   border: 2px solid brown;
+}
+
+#contact > div > div > div.col-md-6.contact_right > form > div.row.d-flex.justify-content-center > button{
+    background-color: brown;
+    border: none;
+    outline: none !important;
+}
+
+#contact > div > div > div.col-md-6.contact_right > form > div.row.d-flex.justify-content-center > button:hover{
+    background-color: black;
+    transition: all ease-in-out .4s;
+}
+
+#contact{
+    padding-bottom: 3em;
+}
+
+#foot{
+    padding: 3em 0 3em 0;
+}
+
+#foot{
+    background-color: brown;
+}
+
+#foot > div > div > div > span{
+    font-family: 'Kanit', sans-serif;  
+    font-weight: 900;
+    font-size: 23px;
+    color: white;
+}
+
+#foot > div > div > div > p{
+    font-family: 'Kanit', sans-serif;  
+    color: white;
+    
+}
+
+#foot > div > div > div > label{
+    color: white;
+    font-family: 'Kanit', sans-serif; 
+    margin-bottom: 18px; 
+}
+
+#foot > div > div > div > label >i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.foot_right{
+   padding-top: 55px;
+  
+}
+
+
+.foot_right a{
+    display: block;
+    margin-bottom: 19px;
+    color: white;
+    font-family: 'Kanit', sans-serif;  
+}
+
+#foot > div > div > div.col-md-3.foot_right > a{
+    text-decoration: none;
+}
+
+#foot > div > div > div.col-md-3.foot_right > a:hover{
+    color: black;
+    transition: all ease-in-out .4s;
+
+}
+
+
+#foot > div > div > div.col-md-3.foot_right > a > i{
+    margin-right: 4px;
+}
+
+#foot > div > div > div > div > a{
+    color: white;
+    font-family: 'Kanit', sans-serif; 
+    text-decoration: none;
+}
+
+#foot > div > div > div > div > a:hover{
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+#foot > div > div > div > div >a> i:hover{
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+#foot > div > div > div > div > a > i{
+    color: white;
+    font-size: 38px;
+    margin-left: 23px;
+}
+
+body > footer:nth-child(n) > div > div > div > label{
+    color: black;
+    font-family: 'Kanit', sans-serif; 
+    margin-top: 3px;
+}
+
+.pro{
+    height: 43em;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    
+}
+
+.pro_name{
+    font-family: 'Kanit', sans-serif;  
+    font-weight: 600;
+    font-size: 30px;
+    color: black; 
+    letter-spacing: 1px;
+}
+
+body > section:nth-child(3) > div > div > div > div > i{
+    font-size: 28px;
+    margin-top: 4px;
+    color: brown;
+}
+
+body > section:nth-child(3) > div > div > div > div > i:hover{
+    color: black;
+    transition: all ease-in-out .2s;
+    cursor: pointer;
+}
+
+.card_div{
+   padding-top: 65px;
+}
+
+
+
+.car_div_outer{
+    padding-right: 5em !important;
+    padding-left: 5em !important;
+    
+}
+
+.prod_name{
+    font-family: 'Kanit', sans-serif;  
+}
