@@ -1,68 +1,68 @@
 {
-    "tittle_image": [
+  "tittle_image": [
+    {
+      "id": 1,
+      "path": " assets/images/pr3.png",
+      "heading": "Hello world",
+      "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+      "type": "active"
+    },
+    {
+      "id": 2,
+      "path": "assets/images/pr3.png",
+      "heading": "Lorem Ipsum is simply dummy text of the printing",
+      "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+      "type": ""
+    },
+    {
+      "id": 3,
+      "path": "assets/images/pr3.png",
+      "heading": "Lorem Ipsum is simply dummy text of the printing",
+      "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+      "type": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
+      "name": "Product",
+      "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 2,
+      "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
+      "name": "Product",
+      "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 3,
+      "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
+      "name": "Product",
+      "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    },
+    {
+      "id": 4,
+      "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
+      "name": "Product",
+      "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    }
+  ],
+  "about_des": {
+    "des": "Welcome to AM Rubber Industries, a leading manufacturer of high-quality rubber products. Established in 1989, we have been providing our customers with exceptional products and services for over 34 years.\nOur state-of-the-art manufacturing facility is located in Kottayam, equipped with the latest technology and machinery to ensure efficient and precise production of rubber products. We have a dedicated team of skilled professionals who are committed to delivering products that meet the highest standards of quality and safety.\nAt AM Rubber Industries, we offer a wide range of rubber products to meet the diverse needs of our customers. Our product portfolio includes O-rings, Oil and Water Seals, Gaskets, Car Mats, Scooter Mats, Mat Connectors, Mudflaps, Bushes, Metal Bounded Rubber Products and many other custom tailored rubber products. We use only the finest materials to ensure the durability and longevity of our products.\nWe take pride in our commitment to environmental sustainability and responsible manufacturing practices. We use eco-friendly materials and processes to reduce our carbon footprint and promote a healthier planet.\nAt AM Rubber Industries, our mission is to exceed our customers' expectations by providing them with the best products and services. We believe in building long-term relationships with our customers based on trust and mutual respect.\nThank you for considering AM Rubber Industries for your rubber product needs. We look forward to serving you!",
+    "images": [
       {
-        "id": 1,
-        "path": " assets/images/pr3.png",
-        "heading": "Hello world",
-        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+        "path": "assets/images/55cba084371d22dc0b8be6be.jpeg",
         "type": "active"
       },
       {
-        "id": 2,
-        "path": "assets/images/pr3.png",
-        "heading": "Lorem Ipsum is simply dummy text of the printing",
-        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+        "path": "assets/images/buildings_cs1-1.jpg",
         "type": ""
       },
       {
-        "id": 3,
-        "path": "assets/images/pr3.png",
-        "heading": "Lorem Ipsum is simply dummy text of the printing",
-        "para": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s",
+        "path": "assets/images/sean-pollock-203658-unsplash-1.jpg",
         "type": ""
       }
-    ],
-    "products": [
-      {
-        "id": 1,
-        "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
-        "name": "Product",
-        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      },
-      {
-        "id": 2,
-        "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
-        "name": "Product",
-        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      },
-      {
-        "id": 3,
-        "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
-        "name": "Product",
-        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      },
-      {
-        "id": 4,
-        "path": "assets/images/SK-Polymer-Products-6zm7ke8jvwpx0tnxwabemxhzghnzfu6dbi.jpg",
-        "name": "Product",
-        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-      }
-    ],
-    "about_des": {
-      "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      "images": [
-        {
-          "path": "assets/images/55cba084371d22dc0b8be6be.jpeg",
-          "type": "active"
-        },
-        {
-          "path": "assets/images/buildings_cs1-1.jpg",
-          "type": ""
-        },
-        {
-          "path": "assets/images/sean-pollock-203658-unsplash-1.jpg",
-          "type": ""
-        }
-      ]
-    }
+    ]
   }
+}
