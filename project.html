@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AM Rubber — Project</title>
+  <link rel="icon" href="assets/A.M Rubbers_BusinessCardFrontcopy.PNG" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a815a59ac0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- Header (keeps same structure as index) -->
+  <header id="top" class="fixed-top">
+    <div class="container">
+      <div class="site-header">
+        <div class="site-brand">
+          <div class="site-logo">AM</div>
+          <div>
+            <div class="name">AM RUBBER INDUSTRIES</div>
+            <div style="font-size:.85rem;color:rgba(230,238,248,0.6)">Precision manufacturing · Rubber components</div>
+          </div>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-nav d-flex flex-row" style="list-style:none;margin:0;padding:0;gap:12px;">
+            <li class="nav-item"><a class="nav-link" href="index.html#pto">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#product">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top:100px;">
+    <section class="container">
+      <div class="hero-card">
+        <div class="kicker">Project</div>
+        <h1 id="projectTitle">AM Rubber — Company & Projects</h1>
+        <p id="projectSubtitle" class="" style="color:var(--muted)">A detailed view of our capabilities, products and facility.</p>
+        <div style="margin-top:14px;">
+          <a class="btn btn-primary" href="index.html#contact">Request a Quote</a>
+          <a class="btn btn-ghost" href="index.html#product">View Products</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="margin-top:22px">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card" style="padding:18px;">
+            <h3>Company Overview</h3>
+            <p id="aboutText" class="" style="color:var(--muted)"></p>
+            <h4 style="margin-top:18px">Key Metrics</h4>
+            <div class="features">
+              <div class="feature"><div class="num" id="metricYears">34+</div><div class="label">Years experience</div></div>
+              <div class="feature"><div class="num" id="metricMolds">100+</div><div class="label">Mold Designs</div></div>
+              <div class="feature"><div class="num" id="metricCapacity">10K+</div><div class="label">Parts / month</div></div>
+            </div>
+          </div>
+
+          <div class="card" style="padding:18px; margin-top:18px;">
+            <h3>Products (Detailed)</h3>
+            <div id="projectProducts" class="grid" style="margin-top:12px"></div>
+          </div>
+        </div>
+
+        <aside class="col-md-4">
+          <div class="card" style="padding:18px; text-align:center;">
+            <h4>Gallery</h4>
+            <div id="projectGallery" style="display:grid;grid-template-columns:repeat(1,1fr);gap:12px;margin-top:12px"></div>
+          </div>
+
+          <div class="card" style="padding:18px; margin-top:18px; text-align:center;">
+            <h4>Contact</h4>
+            <p style="color:var(--muted)">For project quotes and technical enquiries:</p>
+            <p style="font-weight:700">info@amrubber.in</p>
+            <a class="btn btn-primary" href="index.html#contact">Contact Us</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer id="foot" style="margin-top:36px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center" style="color:var(--muted)">© AM Rubber Industries</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Load main data and render the project page
+    fetch('mainData.json')
+      .then(function(r){ if(!r.ok) throw new Error('Failed to load mainData.json'); return r.json(); })
+      .then(function(data){
+        // About text
+        var about = data.about_des && data.about_des.des ? data.about_des.des : '';
+        document.getElementById('aboutText').innerText = about;
+
+        // Metrics (derive simple metrics from data)
+        try{
+          var years = 2026 - 1989; // baseline year from data header
+          document.getElementById('metricYears').innerText = years + '+';
+        }catch(e){}
+
+        if(data.products && data.products.length){
+          document.getElementById('metricMolds').innerText = (data.products.length*5) + '+'; // conservative estimate
+        }
+
+        // Gallery images
+        var galleryEl = document.getElementById('projectGallery');
+        if(data.about_des && Array.isArray(data.about_des.images)){
+          data.about_des.images.forEach(function(img){
+            var div = document.createElement('div');
+            div.style.borderRadius='8px';
+            div.style.overflow='hidden';
+            div.innerHTML = '<img src="'+img.path+'" alt="gallery" style="width:100%;height:120px;object-fit:cover;border-radius:6px"/>';
+            galleryEl.appendChild(div);
+          });
+        }
+
+        // Products detailed
+        var productsEl = document.getElementById('projectProducts');
+        if(Array.isArray(data.products)){
+          data.products.forEach(function(p){
+            var card = document.createElement('div');
+            card.className = 'card';
+            card.style.padding='14px';
+            card.innerHTML = '<div style="display:flex;gap:12px;align-items:flex-start">'+
+              '<img src="'+p.path+'" alt="'+p.name+'" style="width:120px;height:100px;object-fit:cover;border-radius:8px">'+
+              '<div style="flex:1">'+
+                '<h3 style="margin:0 0 6px 0">'+p.name+'</h3>'+
+                '<p style="margin:0 0 8px 0;color:var(--muted)">'+p.des+'</p>'+
+                '<div style="display:flex;gap:8px;margin-top:8px">'+
+                  '<a class="btn btn-primary" href="index.html#contact">Request Quote</a>'+
+                  '<a class="btn btn-ghost" href="#" onclick="alert(\'More product specs can be requested via email\')">Request Specs</a>'+ 
+                '</div>'+
+              '</div>'+
+            '</div>';
+            productsEl.appendChild(card);
+          });
+        }
+      })
+      .catch(function(err){
+        console.error(err);
+        document.getElementById('aboutText').innerText = 'Project data could not be loaded.';
+      });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

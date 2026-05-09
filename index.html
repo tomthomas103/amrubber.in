@@ -9,55 +9,68 @@
     <link rel="stylesheet" href="style.css">
     
     <script src="https://kit.fontawesome.com/a815a59ac0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     
 </head>
 <body>
-    <header id="top" class="fixed-top">  
-          <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img class="logo d-none d-sm-block" src="assets/A.M Rubbers_BusinessCardFrontcopy.PNG" alt=""></a>
-            <span class="name">AM RUBBER INDUSTRIES</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link"  href="#pto"  id="nave1">Home </a>
-                </li>
-
-                <li class="nav-item active">
-                   <a class="nav-link" href="#product"  id="nave2">Products </a>
-                </li>
-
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#about" id="nave3">About Us </a>
-                  </li>
-
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#contact" id="nave4">Contact Us </a>
-                  </li>
-                
-              </ul>
-              
+    <header id="top" class="fixed-top">
+      <div class="container">
+        <div class="site-header">
+          <div class="site-brand">
+            <div class="site-logo">AM</div>
+            <div>
+              <div class="name">AM RUBBER INDUSTRIES</div>
+              <div style="font-size:.85rem;color:rgba(230,238,248,0.6)">Precision manufacturing · Rubber components</div>
             </div>
-          </nav>
-        
-    </div>  
-    </header>
-    <section id="pto">
-        <div class="container-fluid p-0" style="max-width: 1535px; overflow: hidden;">
-            <div class="row">
-                  <div class="col-md-12" style="padding-top: 4.5em;">
-                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" id="mainCarousel">
-                            </div>
-                      </div>
-                </div>
           </div>
+
+          <nav class="navbar">
+            <ul class="navbar-nav d-flex flex-row" style="list-style:none;margin:0;padding:0;gap:12px;">
+              <li class="nav-item"><a class="nav-link" href="#pto">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#product">Products</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+    </header>
+
+    <section id="pto">
+      <div class="container">
+        <section class="hero">
+          <div class="hero-card">
+            <div class="kicker">World-Class Manufacturing</div>
+            <h1>Precision rubber components for critical industries</h1>
+            <p>Delivering certified, high-performance seals, gaskets, and custom-molded components with advanced material science and automated production.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#contact">Request a Quote</a>
+              <a class="btn btn-ghost" href="#product">Our Products</a>
+            </div>
+
+            <div class="features" aria-hidden="false">
+              <div class="feature"><div class="num">ISO 9001</div><div class="label">Certified QMS</div></div>
+              <div class="feature"><div class="num">100+</div><div class="label">Mold Designs</div></div>
+              <div class="feature"><div class="num">24/7</div><div class="label">Production</div></div>
+            </div>
+          </div>
+
+          <aside class="hero-aside">
+            <img src="assets/A.M Rubbers_BusinessCardFrontcopy.PNG" alt="Production line" style="max-height:190px;object-fit:cover;" />
+            <div style="display:flex; gap:12px; justify-content:center; margin-top:12px;">
+              <div style="text-align:center">
+                <div style="font-weight:800; font-size:1.25rem">10K+</div>
+                <div style="color:var(--muted)">Parts / month</div>
+              </div>
+              <div style="text-align:center">
+                <div style="font-weight:800; font-size:1.25rem">99.8%</div>
+                <div style="color:var(--muted)">On-time</div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </div>
     </section>
     <section id="product">
       <div class="container">
