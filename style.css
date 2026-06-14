@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Kanit:wght@300;600;900&display=swap');
 
 :root{
-  --bg:#071022;
-  --card:#0b1220;
-  --muted:#98a0b3;
+  --bg:#0b2030; /* slightly lighter for better contrast */
+  --card:#0f2633; /* card background slightly lifted */
+  --muted:#b7c7d6; /* increase contrast for secondary text */
   --accent:#ff7a00;
   --accent-2:#0078ff;
   --glass: rgba(255,255,255,0.04);
@@ -20,8 +20,8 @@
 html,body{height:100%}
 body{
   margin:0;
-  background: linear-gradient(180deg,#071029 0%, #071725 100%);
-  color:#e6eef8;
+  background: linear-gradient(180deg,#0b2030 0%, #072733 100%);
+  color:#f3f8fc;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.55;
@@ -36,19 +36,20 @@ body{
 /* Header / nav */
 #top{ background:transparent; position:relative; z-index:999; padding-top:14px; padding-bottom:6px; }
 .site-header{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
-.site-brand{ display:flex; gap:12px; align-items:center; }
-.site-logo{
-  width:56px; height:56px; border-radius:10px;
-  background:linear-gradient(135deg,var(--accent-2),var(--accent));
-  display:flex; align-items:center; justify-content:center;
-  font-weight:800; color:white; box-shadow:var(--shadow); flex:0 0 56px;
-}
+.site-brand{ display:flex; gap:6px; align-items:center; }
 .name{
     font-family: 'Kanit', sans-serif;  
     font-weight: 800;
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 0.6px;
+}
+.site-tagline{
+  font-size:0.82rem;
+  color: var(--muted);
+  margin-top:4px;
+  font-weight:600;
+  max-width:360px;
 }
 .navbar{ padding:0 !important; }
 .nav-link{
@@ -145,11 +146,17 @@ label{ color:#e6eef8; font-family: 'Inter', sans-serif; font-weight:600; }
 .btn-primary{ border:none; }
 
 /* Footer */
-#foot{ margin-top:40px; padding:28px; background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border-radius:8px; color:var(--muted); }
+#foot{ margin-top:40px; padding:28px; background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.02)); border-radius:8px; color:var(--muted); }
 #foot span{ font-family: 'Kanit', sans-serif; font-weight:800; font-size:20px; color:#fff; }
 
 /* Responsive */
 @media (max-width:920px){ .hero{ grid-template-columns:1fr; } .site-logo{ display:none } .nav-link{ font-size:14px } }
+
+@media (max-width:480px){
+  .site-logo{ width:30px; height:30px; flex:0 0 30px }
+  .site-logo-img{ width:18px; height:18px }
+  .site-tagline{ display:none }
+}
 
 /* Preserve any legacy classes used elsewhere */
 .logo{ width:110px; height:auto; }
